@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write"
+    "format": "prettier --write '**/*.{ts,tsx}'"
   },
   "lint-staged": {
-    "*": ["eslint", "prettier --write"]
+    "*.{ts,tsx}": [
+      "eslint",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "next": "12.1.6",
