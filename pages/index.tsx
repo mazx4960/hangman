@@ -77,6 +77,7 @@ const Hangman: React.FC = () => {
     setAnswer(generateRandomWord());
     setGameStat("");
     setGameOver(false);
+    setImage(step0);
   };
 
   useEffect(() => {
