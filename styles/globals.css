@@ -5,30 +5,34 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #B2BEB5;
+  background: #f0f7f4;
 }
 
 /*custom css*/
 
 :root {
-  --main-color: #07ffc9;
+  --main-color: #705d56;
   --error-color: #ff1100;
-  --secondary-color: #158cee;
+  --secondary-color: #7389ae;
   --hash-color: #d6dfdf;
 }
 
 .Hangman nav {
   justify-content: space-between;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #32292f;
 }
 
 .Hangman img {
-  width: 200px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
 }
 
 .Hangman h1 {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: bolder;
   padding-top: 0;
   color: var(--secondary-color);
 }
@@ -37,7 +41,7 @@ body {
   letter-spacing: 1em;
   margin: 0.4em -1em 0.2em 0;
   font-size: 1.5rem;
-  color: var(--main-color);
+  color: rgb(0, 0, 0);
 }
 
 .Hangman-btns {
@@ -56,7 +60,7 @@ body {
   letter-spacing: 0px;
   outline: none;
   background: var(--main-color);
-  color: rgb(0, 0, 0);
+  color: rgb(246, 242, 242);
   border-radius: 10px;
   padding-top: 15px;
 }
@@ -67,10 +71,9 @@ body {
   width: 10rem !important;
   background-color: var(--main-color);
   border-color: var(--main-color);
-  box-shadow: 0 0 40px var(--main-color);
 }
 .Hangman button:hover {
-  background-color: #fffffa;
+  background-color: var(--secondary-color);
 }
 
 .Hangman button:disabled {

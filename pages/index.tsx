@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 import { generateRandomWord } from "../utils/random_word";
 
@@ -87,7 +86,7 @@ const Hangman: React.FC = () => {
   return (
     <div className="Hangman">
       <nav className="navbar navbar-expand-lg">
-        <span>Hangman</span>
+        <h1>Hangman</h1>
         <span className="float-right">
           Wrong Guesses: {mistake} of {maxWrong}
         </span>
@@ -95,7 +94,7 @@ const Hangman: React.FC = () => {
       <p className="text-center">
         <Image src={image} alt={`${mistake}/${maxWrong} wrong guesses`} />
       </p>
-      <p className="text-center">Guess the Word</p>
+      <nav className="text-center">Guess the Word</nav>
       <p className="Hangman-word text-center">
         {!gameOver ? guessedWord() : answer}
       </p>
